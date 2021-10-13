@@ -39,13 +39,16 @@ public class Ejemplo2 {
 		nombre.setTextContent("Acceso a datos");
 		asignatura.appendChild(nombre);
 		
+		Element asignatura2 = documento.createElement("asignatura");
+		asignaturas.appendChild(asignatura2);
+		
 		Element codigo2 = documento.createElement("codigo");
 		codigo2.setTextContent("2222");
-		asignatura.appendChild(codigo2);
+		asignatura2.appendChild(codigo2);
 		
 		Element nombre2 = documento.createElement("nombre");
 		nombre2.setTextContent("PSP");
-		asignatura.appendChild(nombre2);
+		asignatura2.appendChild(nombre2);
 		
 		TransformerFactory tf = TransformerFactory.newInstance();
 		Transformer transformer = tf.newTransformer();
